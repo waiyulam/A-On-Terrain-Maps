@@ -1,0 +1,19 @@
+java Main PerfectAI -seed 1
+PerfectAI
+PathCost, 198.40953301482975, Uncovered, 39981, TimeTaken, 272
+
+java Main PerfectAI -seed 2
+PerfectAI
+PathCost, 198.3505826306458, Uncovered, 39756, TimeTaken, 294
+
+java Main PerfectAI -seed 3
+PerfectAI
+PathCost, 198.45353447487392, Uncovered, 41143, TimeTaken, 233
+
+java Main PerfectAI -seed 4
+PerfectAI
+PathCost, 198.29551443251432, Uncovered, 39479, TimeTaken, 214
+
+java Main PerfectAI -seed 5
+PerfectAI
+PathCost, 198.60345691194533, Uncovered, 38813, TimeTaken, 191
