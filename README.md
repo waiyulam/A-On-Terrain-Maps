@@ -7,23 +7,23 @@ TerrainMap is a class encapsulating a two-dimensional world layered on top of a 
 The TerrainMap class also keeps track of which tiles your algorithm visits as it looks for an optimal path home. The cost of searching will be determined by how many tiles your algorithm visisted and the amount of time of searching 
 
 ## Implementation Details 
-All java code, except for AStarDiv.java, AStarExp.java and MtStHelensExp.java, were given by the professor. All files present an implementation of the A star algorithm, but they differ on the Heuristics choice. This is rather redundant, but is for the sake of assignment constraints.Speaking of assignment constraints, we had to implement all the auxiliary classes as nested classes in both files.
+All java code, except for [AStarDiv.java](https://github.com/waiyulam/A-On-Terrain-Maps/blob/master/AStarDiv.java), [AStarExp.java](https://github.com/waiyulam/A-On-Terrain-Maps/blob/master/AStarExp.java) and [MtStHelensExp.java](https://github.com/waiyulam/A-On-Terrain-Maps/blob/master/MtStHelensExp.java), were given by the professor. All files present an implementation of the A star algorithm, but they differ on the Heuristics choice. This is rather redundant, but is for the sake of assignment constraints.Speaking of assignment constraints, we had to implement all the auxiliary classes as nested classes in both files.
 
 ## Usage 
-Compiles source： javac  <src_path>/*.java
+Compiles source： **javac  <src_path>/*.java*
 
-Runs randomly generated map： java Main StupidAI
+Runs randomly generated map： **java Main StupidAI**
 
-Runs with a specifiic seed: java Main StupidAI -seed 1   ***note no equal sign***
+Runs with a specifiic seed: **java Main StupidAI -seed 1** 
 
-To try out our AI implementation, with the division heuristics, go to the src folder and:
-java Main PerfectAI_Div
+To try out our AI implementation, with the division heuristics, go to the src folder and:  
+**java Main PerfectAI_Div**
 
-To try out our AI implementation, with the exponential heuristics, go to the src folder and:
-java Main PerfectAI_Exp
+To try out our AI implementation, with the exponential heuristics, go to the src folder and:  
+**java Main PerfectAI_Exp**
 
-To try out our AI implementation in Mount Saint Helens map , go to the src folder and:
-java Main PerfectAI
+To try out our AI implementation in Mount Saint Helens map , go to the src folder and:   
+**java Main PerfectAI**
 
 For more API usage, please refer [How to build and run](https://github.com/waiyulam/A-On-Terrain-Maps/blob/master/HowToBuildandRun.txt)
 
