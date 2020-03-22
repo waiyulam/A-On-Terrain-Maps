@@ -266,7 +266,7 @@ public final class TerrainMap
                     neighbors.add(temp);
             }
         }
-        return neighbors.to:qArray(new Point[0]);
+        return neighbors.toArray(new Point[0]);
     }
 
     /// Returns the cost to move from one point to another.
@@ -281,9 +281,8 @@ public final class TerrainMap
      */
     public double getCost(final Point p1, final Point p2)
     {
-         // Only use of the the following dependent on question
-         //return (double) (getTile(p1)) /  ( (double) getTile(p2)+1.0);
-	return Math.pow(2.0,getTile(p2) - getTile(p1));
+         //return getTile(p2) /  (getTile(p1)+1.0);
+        return Math.exp(getTile(p2) - getTile(p1));
     }
     
     /// Returns the width of the map.
@@ -337,18 +336,19 @@ public final class TerrainMap
             throw new RuntimeException("Empty Path");
         }
 
-        // Make sure that we start and end at the correct points.
+        // // Make sure that we start and end at the correct points.
         if(!path.get(0).equals(StartPoint) || !path.get(path.size() - 1).equals(EndPoint))
         {
             throw new RuntimeException("Invalid Path");
         }
 
-        // Confirm that each step in the path moves between adjacent points.
+        // // Confirm that each step in the path moves between adjacent points.
         for(int index = 0; index < path.size() - 1; index++)
         {
+            System.out.print(path.get(index).x + ", " + path.get(index).y + "\n");
             if(!isAdjacent(path.get(index), path.get(index + 1)))
             {
-                throw new RuntimeException("Invalid Path");
+                throw new RuntimeException("Invalid Path IsAdjacent");
             }
         }
 

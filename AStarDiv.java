@@ -5,7 +5,7 @@
 import java.awt.Point;
 import java.util.*;
 
-class PerfectAI implements AIModule {
+class PerfectAI_Div implements AIModule {
     static class Cell {
         double heuristicCost = 0; //Heuristic cost
         double finalCost = 0; //G+H
