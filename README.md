@@ -15,4 +15,4 @@ Runs multiple modules: time java -Xmx1024M Main -load MTAFT.XYZ DijkstraAI Direc
 Runs with a specifiic seed: java Main StupidAI -seed 1   ***note no equal sign***
 
 ##Sources 
-[Project link](file:///Users/wylam/Documents/Courses/Winter2020/ECS170/ASTAR-ToDistribute/html/index.html)
+[Project link](https://github.com/waiyulam/A-On-Terrain-Maps/blob/master/html/index.html)
