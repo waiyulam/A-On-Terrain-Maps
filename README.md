@@ -69,7 +69,7 @@ To try out our AI implementation, with the exponential heuristics, go to the src
 2. Run : **java Main PerfectAI_Exp**
 
 To try out our AI implementation in Mount Saint Helens map , go to the src folder and:   
-**java Main PerfectAI**
+**java Main PerfectAI -load MTAFT.XYZ**
 
 For more API usage, please refer [How to build and run](https://github.com/waiyulam/A-On-Terrain-Maps/blob/master/HowToBuildandRun.txt)
 
