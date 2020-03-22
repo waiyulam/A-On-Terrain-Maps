@@ -279,11 +279,16 @@ public final class TerrainMap
      * @param p2 The second point.
      * @return The cost to move from the first point to the second point.
      */
+    // Exponential of the height difference
     public double getCost(final Point p1, final Point p2)
     {
-         //return getTile(p2) /  (getTile(p1)+1.0);
-        return Math.exp(getTile(p2) - getTile(p1));
+        return Math.pow(2.0, (getTile(p2) - getTile(p1)));
     }
+    // Bizzaro world cost function
+    // public double getCost(final Point p1, final Point p2)
+    // {
+    //     return 1.0*(getTile(p1) / (getTile(p2) + 1));
+    // }
     
     /// Returns the width of the map.
     public int getWidth()
