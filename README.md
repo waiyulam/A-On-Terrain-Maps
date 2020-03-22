@@ -13,3 +13,6 @@ Runs with map generated from DEM2XYZ :
 Runs multiple modules: time java -Xmx1024M Main -load MTAFT.XYZ DijkstraAI DirectAI
 
 Runs with a specifiic seed: java Main StupidAI -seed 1   ***note no equal sign***
+
+##Sources 
+[Project link](file:///Users/wylam/Documents/Courses/Winter2020/ECS170/ASTAR-ToDistribute/html/index.html)
